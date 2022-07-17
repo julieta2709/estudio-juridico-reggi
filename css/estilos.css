@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .col-sm-12 {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+} */
