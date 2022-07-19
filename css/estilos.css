@@ -21,9 +21,36 @@ h1 {
 .justify-content-evenly {
     background-color: rgb(178, 178, 248);
     margin-top: 5px;
+
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: rgb(78, 77, 77);
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    background-color: rgb(78, 77, 77);
+body {
+    background-color: rgb(199, 199, 229);
 }
+
+.card-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.card-img-top{
+    height: 200px;
+}
+
