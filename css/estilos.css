@@ -4,8 +4,26 @@
     box-sizing: border-box;
 }
 
-/* .col-sm-12 {
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-} */
+header {
+    background-color: rgb(78, 77, 77);
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.nav-link {
+    color: black;
+    font-weight: bold;
+}
+
+.justify-content-evenly {
+    background-color: rgb(178, 178, 248);
+    margin-top: 5px;
+    
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: rgb(78, 77, 77);
+}
