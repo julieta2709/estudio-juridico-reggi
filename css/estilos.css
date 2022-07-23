@@ -78,5 +78,19 @@ form p {
     color: rgb(34, 160, 34);
     font-size: 3rem;
     font-weight: bold;
+}
 
+.fa-whatsapp {
+    align-items: center;
+}
+
+.list-group-item {
+    background-color: rgb(78, 77, 77);
+    color: white;
+    border-color: #fff;
+}
+
+footer h5 {
+    color: white;
+    text-align: center;
 }
