@@ -1,37 +1,27 @@
 .py-4 {
     background-color: $color_principal;
     margin-top: 10px;
-}
-
-.nav-link {
     color: white;
-}
 
-form h5 {
-    color: white;
-}
+    & h5 {
+        color: white;
+        text-align: center;
+    }
 
-form p {
-    color: white;
-}
+    & .list-group-item {
+        border-color: #fff;
+        background-color: $color_principal;
+        color: white;
+    }
 
-.row .justify-content-evenly {
-    background-color: $color_principal;
+    & .nav-link {
+        font-weight: bold;
+        color: white;
+    }
 }
 
 .fa-brands {
     color: rgb(34, 160, 34);
     font-size: 3rem;
     font-weight: bold;
-}
-
-.list-group-item {
-    background-color: $color_principal;
-    color: white;
-    border-color: #fff;
-}
-
-footer h5 {
-    color: white;
-    text-align: center;
 }

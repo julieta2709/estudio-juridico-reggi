@@ -19,10 +19,9 @@ header {
     header .justify-content-evenly .nav-pills .nav-link.active,
     header .justify-content-evenly .nav-pills .show > .nav-link {
       background-color: #4e4d4d; }
-      header .justify-content-evenly .nav-pills .nav-link.active .nav-link,
-      header .justify-content-evenly .nav-pills .show > .nav-link .nav-link {
-        color: black;
-        font-weight: bold; }
+  header .nav-link {
+    color: black;
+    font-weight: bold; }
 
 .card-container {
   display: flex;
@@ -40,30 +39,20 @@ header {
 
 .py-4 {
   background-color: #4e4d4d;
-  margin-top: 10px; }
-
-.nav-link {
+  margin-top: 10px;
   color: white; }
-
-form h5 {
-  color: white; }
-
-form p {
-  color: white; }
-
-.row .justify-content-evenly {
-  background-color: #4e4d4d; }
+  .py-4 h5 {
+    color: white;
+    text-align: center; }
+  .py-4 .list-group-item {
+    border-color: #fff;
+    background-color: #4e4d4d;
+    color: white; }
+  .py-4 .nav-link {
+    font-weight: bold;
+    color: white; }
 
 .fa-brands {
   color: #22a022;
   font-size: 3rem;
   font-weight: bold; }
-
-.list-group-item {
-  background-color: #4e4d4d;
-  color: white;
-  border-color: #fff; }
-
-footer h5 {
-  color: white;
-  text-align: center; }

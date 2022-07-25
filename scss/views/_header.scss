@@ -15,11 +15,11 @@ header {
         .nav-pills .show>.nav-link {
             background-color: $color_principal;
 
-            & .nav-link {
-                color: black;
-                font-weight: bold;
-            }
         }
+    }
 
+    .nav-link {
+        color: black;
+        font-weight: bold;
     }
 }
