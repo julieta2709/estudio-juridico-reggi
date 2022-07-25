@@ -2,17 +2,19 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+
     & .card-img-top {
         height: 200px;
     }
-    & .card-title {
-        font-weight: bold;
-        text-align: center;
-        font-size: 30px;
-    }
+
     & .card-text {
         text-align: justify;
     }
 
 }
 
+.card-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
