@@ -1,0 +1,25 @@
+header {
+    background-color: $color_principal;
+
+    & h1,
+    h2,
+    h3 {
+        color: white;
+    }
+
+    & .justify-content-evenly {
+        background-color: rgb(178, 178, 248);
+        margin-top: 5px;
+
+        & .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            background-color: $color_principal;
+
+            & .nav-link {
+                color: black;
+                font-weight: bold;
+            }
+        }
+
+    }
+}

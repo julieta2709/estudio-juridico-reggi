@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(78, 77, 77);
+}
+
+h1, h2, h3 {
+    color: white;
+}
+
+.nav-link {
+    color: black;
+    font-weight: bold;
+}
+
+.justify-content-evenly {
+    background-color: rgb(178, 178, 248);
+    margin-top: 5px;
+
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: rgb(78, 77, 77);
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+body {
+    background-color: rgb(199, 199, 229);
+}
+
+.card-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.card-img-top {
+    height: 200px;
+}
+
+.py-4 {
+    background-color: rgb(78, 77, 77);
+    margin-top: 10px;
+}
+
+.nav-link {
+    color: white;
+}
+
+form h5 {
+    color: white;
+}
+
+form p {
+    color: white;
+}
+
+.row .justify-content-evenly {
+    background-color: rgb(78, 77, 77);
+}
+
+.fa-brands {
+    color: rgb(34, 160, 34);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.list-group-item {
+    background-color: rgb(78, 77, 77);
+    color: white;
+    border-color: #fff;
+}
+
+footer h5 {
+    color: white;
+    text-align: center;
+}

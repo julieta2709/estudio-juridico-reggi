@@ -1,92 +1,68 @@
+/* VARIABLES DE COLORES */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    background-color: rgb(78, 77, 77);
-}
-
-h1, h2, h3 {
-    color: white;
-}
-
-.nav-link {
-    color: black;
-    font-weight: bold;
-}
-
-.justify-content-evenly {
-    background-color: rgb(178, 178, 248);
-    margin-top: 5px;
-
-}
-
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
-    background-color: rgb(78, 77, 77);
-}
-
-.card-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
-    background-color: rgb(199, 199, 229);
-}
+  background-color: #c7c7e5; }
 
-.card-title {
+header {
+  background-color: #4e4d4d; }
+  header h1,
+  header h2,
+  header h3 {
+    color: white; }
+  header .justify-content-evenly {
+    background-color: #b2b2f8;
+    margin-top: 5px; }
+    header .justify-content-evenly .nav-pills .nav-link.active,
+    header .justify-content-evenly .nav-pills .show > .nav-link {
+      background-color: #4e4d4d; }
+      header .justify-content-evenly .nav-pills .nav-link.active .nav-link,
+      header .justify-content-evenly .nav-pills .show > .nav-link .nav-link {
+        color: black;
+        font-weight: bold; }
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .card-container .card-img-top {
+    height: 200px; }
+  .card-container .card-title {
     font-weight: bold;
     text-align: center;
-    font-size: 30px;
-}
-
-.card-text {
-    text-align: justify;
-}
-
-.card-img-top {
-    height: 200px;
-}
+    font-size: 30px; }
+  .card-container .card-text {
+    text-align: justify; }
 
 .py-4 {
-    background-color: rgb(78, 77, 77);
-    margin-top: 10px;
-}
+  background-color: #4e4d4d;
+  margin-top: 10px; }
 
 .nav-link {
-    color: white;
-}
+  color: white; }
 
 form h5 {
-    color: white;
-}
+  color: white; }
 
 form p {
-    color: white;
-}
+  color: white; }
 
 .row .justify-content-evenly {
-    background-color: rgb(78, 77, 77);
-}
+  background-color: #4e4d4d; }
 
 .fa-brands {
-    color: rgb(34, 160, 34);
-    font-size: 3rem;
-    font-weight: bold;
-}
+  color: #22a022;
+  font-size: 3rem;
+  font-weight: bold; }
 
 .list-group-item {
-    background-color: rgb(78, 77, 77);
-    color: white;
-    border-color: #fff;
-}
+  background-color: #4e4d4d;
+  color: white;
+  border-color: #fff; }
 
 footer h5 {
-    color: white;
-    text-align: center;
-}
+  color: white;
+  text-align: center; }
