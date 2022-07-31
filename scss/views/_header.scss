@@ -1,7 +1,51 @@
 header {
     background-color: $color_principal;
+    @include flex (column, space-around, center);
+    flex-wrap: wrap;
+    border-bottom: 5px;
+    padding: $spacing_xsmall;
 
-    & h1,
+    .header_container {
+        @include flex (row, space-around, center);
+    }
+
+    .header_logo_link{
+        width: 30%;
+    }
+    
+    .header_logo_img{
+        width: 80%
+    } 
+
+    .header_parrafo {
+        @include flex (column, flex-start, center);
+
+        .header_parrafo_h1,
+        h2,
+        h3 {
+            color: $text_color;
+            font-weight: bold;
+        }
+
+        .header_parrafo_h1 {
+            font-size: $text_large;
+        }
+
+        &_h2 {
+            font-size: $text_medium;
+        }
+
+        &_h3 {
+            font-size: $text_small;
+        }
+    }
+
+
+}
+
+
+
+/* & h1,
     h2,
     h3 {
         color: white;
@@ -21,5 +65,4 @@ header {
     .nav-link {
         color: black;
         font-weight: bold;
-    }
-}
+    } */

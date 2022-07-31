@@ -1,6 +1,16 @@
+/* Variables */
 @import './Utilities/variables';
+
+/* Normalizadores */
 @import './base/reset';
+
+/* Mixins */
+@import './Utilities/mixins';
+
+/* Header */
 @import './views/header';
+
+
 @import './views/mainindex';
 @import './views/footer';
 

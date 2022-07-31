@@ -5,5 +5,14 @@
 }
 
 body{
-    background-color: rgb(199, 199, 229);
+    background-color: $color_alternative;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: $text_color;
 }
