@@ -1,68 +1,69 @@
 header {
     background-color: $color_principal;
-    @include flex (column, space-around, center);
+    @include flex (column, space-around, stretch);
     flex-wrap: wrap;
     border-bottom: 5px;
-    padding: $spacing_xsmall;
 
     .header_container {
         @include flex (row, space-around, center);
     }
 
-    .header_logo_link{
+    .header_logo_link {
         width: 30%;
     }
-    
-    .header_logo_img{
-        width: 80%
-    } 
+
+    .header_logo_img {
+        width: 80%;
+        padding: $spacing_xsmall;
+    }
 
     .header_parrafo {
         @include flex (column, flex-start, center);
 
-        .header_parrafo_h1,
+        &_h1,
         h2,
         h3 {
             color: $text_color;
             font-weight: bold;
-        }
-
-        .header_parrafo_h1 {
-            font-size: $text_large;
-        }
-
-        &_h2 {
-            font-size: $text_medium;
-        }
-
-        &_h3 {
-            font-size: $text_small;
         }
     }
 
 
 }
 
+.menu {
+    background-color: $color_secondary;
+    margin-bottom: 5px;
+}
 
+.navbar-expand-lg .navbar-collapse {
+    justify-content: space-around;
+}
 
-/* & h1,
-    h2,
-    h3 {
-        color: white;
-    }
+.nav.nav-pills {
+    gap: 1rem;
+}
 
-    & .justify-content-evenly {
-        background-color: rgb(178, 178, 248);
-        margin-top: 5px;
+.nav-pills .nav-link.active,
+.nav-pills .nav-link,
+.navbar-toggler {
+    border-radius: 4px;
+    border: solid 1px $color_principal;
+    background-color: $color_principal;
+}
 
-        & .nav-pills .nav-link.active,
-        .nav-pills .show>.nav-link {
-            background-color: $color_principal;
+.button_menu {
+    color: white;
+    font-size: $text_xsmall;
+    font-weight: bold;
+}
 
-        }
-    }
+.navbar-toggler-icon {
+    background-image: none;
+}
 
-    .nav-link {
-        color: black;
-        font-weight: bold;
-    } */
+.navbar-toggler-icon::before {
+    font-family: FontAwesome;
+    content: "\f0c9";
+    color: white;
+}

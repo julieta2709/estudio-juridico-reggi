@@ -4,15 +4,36 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: $color_alternative;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: $text_color;
+}
+
+.card {
+    background-color: white;
+}
+
+h1 {
+    font-size: $text_large;
+}
+
+h2 {
+    font-size: $text_medium;
+}
+
+h3 {
+    font-size: $text_small;
+}
+
+.nav-link {
+    font-weight: bold;
+    color: white;
 }

@@ -20,6 +20,22 @@ a {
   text-decoration: none;
   color: white; }
 
+.card {
+  background-color: white; }
+
+h1 {
+  font-size: 5.2 em; }
+
+h2 {
+  font-size: 2.2 em; }
+
+h3 {
+  font-size: 1.6 em; }
+
+.nav-link {
+  font-weight: bold;
+  color: white; }
+
 /* Mixins */
 /* Header */
 header {
@@ -27,10 +43,9 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
-  border-bottom: 5px;
-  padding: 1rem; }
+  border-bottom: 5px; }
   header .header_container {
     display: flex;
     flex-direction: row;
@@ -39,45 +54,49 @@ header {
   header .header_logo_link {
     width: 30%; }
   header .header_logo_img {
-    width: 80%; }
+    width: 80%;
+    padding: 1rem; }
   header .header_parrafo {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center; }
-    header .header_parrafo .header_parrafo_h1,
+    header .header_parrafo_h1,
     header .header_parrafo h2,
     header .header_parrafo h3 {
       color: white;
       font-weight: bold; }
-    header .header_parrafo .header_parrafo_h1 {
-      font-size: 5.2 em; }
-    header .header_parrafo_h2 {
-      font-size: 2.2 em; }
-    header .header_parrafo_h3 {
-      font-size: 1.6 em; }
 
-/* & h1,
-    h2,
-    h3 {
-        color: white;
-    }
+.menu {
+  background-color: #b2b2f8;
+  margin-bottom: 5px; }
 
-    & .justify-content-evenly {
-        background-color: rgb(178, 178, 248);
-        margin-top: 5px;
+.navbar-expand-lg .navbar-collapse {
+  justify-content: space-around; }
 
-        & .nav-pills .nav-link.active,
-        .nav-pills .show>.nav-link {
-            background-color: $color_principal;
+.nav.nav-pills {
+  gap: 1rem; }
 
-        }
-    }
+.nav-pills .nav-link.active,
+.nav-pills .nav-link,
+.navbar-toggler {
+  border-radius: 4px;
+  border: solid 1px #4e4d4d;
+  background-color: #4e4d4d; }
 
-    .nav-link {
-        color: black;
-        font-weight: bold;
-    } */
+.button_menu {
+  color: white;
+  font-size: 1.4 em;
+  font-weight: bold; }
+
+.navbar-toggler-icon {
+  background-image: none; }
+
+.navbar-toggler-icon::before {
+  font-family: FontAwesome;
+  content: "\f0c9";
+  color: white; }
+
 .card-container {
   display: flex;
   justify-content: space-around;
