@@ -1,20 +1,32 @@
 .card-container {
-    display: flex;
-    justify-content: space-around;
+    @include flex (row, space-around, none);
     flex-wrap: wrap;
+    margin-top: 20px;
+}
 
-    & .card-img-top {
+.card {
+    width: 18rem;
+
+    &-img {
         height: 200px;
     }
 
-    & .card-text {
-        text-align: justify;
+    &-body {
+        @include flex (column, center, center);
     }
-
 }
 
-.card-title {
+.btn {
+    border-radius: 10px;
+    border: 2px solid $color_principal;
+    padding: 1rem;
+}
+
+.bg-pension, .bg-jubilacion {
+    @extend .btn;
     font-weight: bold;
-    text-align: center;
-    font-size: 30px;
+    justify-items: center;
+    
 }
+
+ 

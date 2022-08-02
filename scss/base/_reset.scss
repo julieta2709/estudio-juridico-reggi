@@ -19,7 +19,18 @@ a {
 
 .card {
     background-color: white;
+
+    &-title {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    &-text {
+        text-align: justify;
+    }
 }
+
+
 
 h1 {
     font-size: $text_large;

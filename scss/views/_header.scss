@@ -52,18 +52,26 @@ header {
     background-color: $color_principal;
 }
 
+.navbar-toggler {
+    display: flex;
+    align-items: center;
+
+    &-icon {
+        background-image: none;
+        margin-top: 5px;
+
+        &::before {
+            font-family: FontAwesome;
+            content: "\f0c9";
+            color: white;
+        }
+    }
+
+}
+
 .button_menu {
     color: white;
     font-size: $text_xsmall;
     font-weight: bold;
-}
-
-.navbar-toggler-icon {
-    background-image: none;
-}
-
-.navbar-toggler-icon::before {
-    font-family: FontAwesome;
-    content: "\f0c9";
-    color: white;
+    margin: 0 5px 5px 0;
 }

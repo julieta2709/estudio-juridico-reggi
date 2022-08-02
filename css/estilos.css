@@ -22,6 +22,11 @@ a {
 
 .card {
   background-color: white; }
+  .card-title {
+    text-align: center;
+    font-weight: bold; }
+  .card-text {
+    text-align: justify; }
 
 h1 {
   font-size: 5.2 em; }
@@ -37,6 +42,12 @@ h3 {
   color: white; }
 
 /* Mixins */
+.bg-jubilacion {
+  background-color: #239683; }
+
+.bg-pension {
+  background-color: #698f8f; }
+
 /* Header */
 header {
   background-color: #4e4d4d;
@@ -84,32 +95,49 @@ header {
   border: solid 1px #4e4d4d;
   background-color: #4e4d4d; }
 
+.navbar-toggler {
+  display: flex;
+  align-items: center; }
+  .navbar-toggler-icon {
+    background-image: none;
+    margin-top: 5px; }
+    .navbar-toggler-icon::before {
+      font-family: FontAwesome;
+      content: "\f0c9";
+      color: white; }
+
 .button_menu {
   color: white;
   font-size: 1.4 em;
-  font-weight: bold; }
-
-.navbar-toggler-icon {
-  background-image: none; }
-
-.navbar-toggler-icon::before {
-  font-family: FontAwesome;
-  content: "\f0c9";
-  color: white; }
+  font-weight: bold;
+  margin: 0 5px 5px 0; }
 
 .card-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  flex-wrap: wrap; }
-  .card-container .card-img-top {
-    height: 200px; }
-  .card-container .card-text {
-    text-align: justify; }
+  align-items: none;
+  flex-wrap: wrap;
+  margin-top: 20px; }
 
-.card-title {
+.card {
+  width: 18rem; }
+  .card-img {
+    height: 200px; }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+.btn, .bg-pension, .bg-jubilacion {
+  border-radius: 10px;
+  border: 2px solid #4e4d4d;
+  padding: 1rem; }
+
+.bg-pension, .bg-jubilacion {
   font-weight: bold;
-  text-align: center;
-  font-size: 30px; }
+  justify-items: center; }
 
 .py-4 {
   background-color: #4e4d4d;

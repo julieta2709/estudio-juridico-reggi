@@ -1,0 +1,11 @@
+$colors: (
+    jubilacion: $jubilacion,
+    pension: $pension,
+); 
+
+@each $name,
+$value in $colors {
+    .bg-#{$name} {
+        background-color: $value;
+    }
+}
