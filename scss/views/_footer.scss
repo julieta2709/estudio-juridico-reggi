@@ -1,23 +1,39 @@
-.py-4 {
+footer {
     background-color: $color_principal;
     margin-top: 10px;
     color: white;
 
-    & h5 {
-        color: white;
-        text-align: center;
-    }
+}
 
-    & .list-group-item {
-        border-color: #fff;
-        background-color: $color_principal;
-        color: white;
-    }
+.footer-container {
+    @include flex (row, space-around, flex-start);
+    flex-wrap: wrap;
+}
 
-    & .nav-link {
-        font-weight: bold;
-        color: white;
+.footer-navbar {
+    @include flex (row, space-around, center);
+    flex-wrap: wrap;
+}
+
+
+@media (min-width: 768px) {
+    .footer-navbar {
+        @include flex (column, space-around, flex-start);
     }
+}
+
+
+
+.footer-contacto,
+.footer-wsp {
+    @include flex (column, space-around, center);
+    margin-top: 20px;
+
+}
+
+.list-group-item{
+    background-color: $color_principal;
+    color: white;
 }
 
 .fa-brands {

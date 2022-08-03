@@ -118,7 +118,8 @@ header {
   justify-content: space-around;
   align-items: none;
   flex-wrap: wrap;
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 .card {
   width: 18rem; }
@@ -139,20 +140,43 @@ header {
   font-weight: bold;
   justify-items: center; }
 
-.py-4 {
+footer {
   background-color: #4e4d4d;
   margin-top: 10px;
   color: white; }
-  .py-4 h5 {
-    color: white;
-    text-align: center; }
-  .py-4 .list-group-item {
-    border-color: #fff;
-    background-color: #4e4d4d;
-    color: white; }
-  .py-4 .nav-link {
-    font-weight: bold;
-    color: white; }
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap; }
+
+.footer-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+
+@media (min-width: 768px) {
+  .footer-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start; } }
+
+.footer-contacto,
+.footer-wsp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px; }
+
+.list-group-item {
+  background-color: #4e4d4d;
+  color: white; }
 
 .fa-brands {
   color: #22a022;
