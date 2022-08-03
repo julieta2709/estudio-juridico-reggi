@@ -21,38 +21,46 @@
 
 <body>
     <!-- INICIO HEADER -->
-    <header class="d-flex  flex-column flex-wrap py-3 mb-4 border-bottom">
-        <div class="d-flex align-items-center flex-wrap justify-content-around">
-            <a class="col-2" href="../index.html">
-                <img class="img-fluid" src="../assets/img/logonr.png" alt="logo de la marca">
+    <header>
+        <div class="header_container">
+            <a class="header_logo_link" href="../index.html">
+                <img class="header_logo_img" src="../assets/img/logonr.png" alt="logo de la marca">
             </a>
-            <div class="d-flex flex-column">
-                <h1 class="text-md-start text-wrap fs-1 text-uppercase fw-bold">Estudio Jurídico Previsional </h1>
-                <h2 class="text-center text-wrap fs-2 fw-bold ">Natalia Aurelia Reggi</h2>
-                <h3 class="text-center text-wrap fs-3">Abogada</h3>
+            <div class="header_parrafo">
+                <h1 class="header_parrafo_h1">Estudio Jurídico Previsional</h1>
+                <h2 class="header_parrafo_h2">Natalia Aurelia Reggi</h2>
+                <h3 class="header_parrafo_h3">Abogada</h3>
             </div>
         </div>
-        <div>
-            <div class="d-flex flex-wrap justify-content-evenly">
+        <div class="menu">
+            <div class="menu_navbar">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
-                        <ul class="nav nav-pills">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/sobrenosotros.html">Sobre Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/servicios.html">Servicios</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/Informacionutil.html">Información útil</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                            </li>
-                        </ul>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <p class="button_menu">Menu</p>
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/sobrenosotros.html">Sobre Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/Informacionutil.html">Información útil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
             </div>
