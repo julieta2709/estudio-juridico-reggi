@@ -1,0 +1,24 @@
+.carousel-img {
+    display: block;
+    width: 80%;
+    margin: 20px 0 0 130px;
+
+}
+
+.carousel-title {
+    font-weight: bold;
+
+}
+
+.carousel-text {
+    font-weight: bold;
+    font-size: $text_large;
+
+}
+
+.bg-secondary {
+    @extend .btn;
+    font-weight: bold;
+    justify-items: center;
+
+}

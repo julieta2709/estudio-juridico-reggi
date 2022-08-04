@@ -2,7 +2,6 @@
 /* Variables */
 /* VARIABLES DE COLORES */
 /* VARIABLES DE ESPACIADO */
-/* FAMILIA DE FUENTES */
 /* TAMAÑOS DE FUENTES */
 /* Normalizadores */
 * {
@@ -47,6 +46,9 @@ h3 {
 
 .bg-pension {
   background-color: #698f8f; }
+
+.bg-secondary {
+  background-color: #6c757d; }
 
 /* Header */
 header {
@@ -112,34 +114,7 @@ header {
   font-weight: bold;
   margin: 0 5px 5px 0; }
 
-.card-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: none;
-  flex-wrap: wrap;
-  margin-top: 20px;
-  margin-bottom: 20px; }
-
-.card {
-  width: 18rem; }
-  .card-img {
-    height: 200px; }
-  .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-
-.btn, .bg-pension, .bg-jubilacion {
-  border-radius: 10px;
-  border: 2px solid #4e4d4d;
-  padding: 1rem; }
-
-.bg-pension, .bg-jubilacion {
-  font-weight: bold;
-  justify-items: center; }
-
+/* Footer */
 footer {
   background-color: #4e4d4d;
   margin-top: 10px;
@@ -182,3 +157,49 @@ footer {
   color: #22a022;
   font-size: 3rem;
   font-weight: bold; }
+
+/* Contenido index */
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: none;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.card {
+  width: 18rem; }
+  .card-img {
+    height: 200px; }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+.btn, .bg-pension, .bg-jubilacion, .bg-secondary {
+  border-radius: 10px;
+  border: 2px solid #4e4d4d;
+  padding: 1rem; }
+
+.bg-pension, .bg-jubilacion {
+  font-weight: bold;
+  justify-items: center; }
+
+/* Contenido Sobrenosotros */
+.carousel-img {
+  display: block;
+  width: 80%;
+  margin: 20px 0 0 130px; }
+
+.carousel-title {
+  font-weight: bold; }
+
+.carousel-text {
+  font-weight: bold;
+  font-size: 5.2 em; }
+
+.bg-secondary {
+  font-weight: bold;
+  justify-items: center; }
