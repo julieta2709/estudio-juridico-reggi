@@ -7,13 +7,17 @@
 
 .card {
     width: 18rem;
+    margin-top: 10px;
 
     &-img {
         height: 200px;
     }
 
     &-body {
-        @include flex (column, center, center);
+        @include flex (column, flex-start, center);
+    }
+    & .text-muted{
+        font-style: italic;
     }
 }
 
@@ -23,11 +27,10 @@
     padding: 1rem;
 }
 
-.bg-pension, .bg-jubilacion {
+.bg-pension,
+.bg-jubilacion {
     @extend .btn;
     font-weight: bold;
     justify-items: center;
-    
-}
 
- 
+}

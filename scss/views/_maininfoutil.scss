@@ -1,0 +1,15 @@
+.infoutil-container {
+    @include flex (column, center, flex-start);
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 2rem;
+
+    .infoutil-img {
+        width: 35%;
+    }
+
+    & h4, .infoutil-link {
+        font-weight: bold;
+    }
+
+}
