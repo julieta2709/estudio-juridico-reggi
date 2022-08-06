@@ -1,5 +1,5 @@
 .contacto-container {
-    @include flex (row, center, flex-start);
+    @include flex (column, center, flex-start);
     margin-top: 10px;
     gap: $spacing_small;
 
@@ -8,11 +8,10 @@
         color: white;
         font-weight: bold;
         font-size: $text_xlarge;
-        padding:0.5rem;
+        padding: 0.5rem;
         background-color: $color_principal;
         margin-left: 10px;
         margin-right: 10px;
-
     }
 
     form {
@@ -48,7 +47,7 @@
     .contacto-texto {
         @include flex (column, space-evenly, normal);
 
-                .contacto-mapa {
+        .contacto-mapa {
             @include flex (row, space-evenly, normal);
         }
 
@@ -59,5 +58,9 @@
         & iframe {
             width: 50%;
         }
+    }
+
+    @media screen and (min-width: 768px) {
+        @include flex (row, center, flex-start);
     }
 }

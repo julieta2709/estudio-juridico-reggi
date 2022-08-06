@@ -3,3 +3,9 @@
         @include flex (column, space-around, flex-start);
     }
 }
+
+@media screen and (min-width: 768px) {
+    .contacto-container {
+        @include flex (row, center, flex-start);
+    }
+}

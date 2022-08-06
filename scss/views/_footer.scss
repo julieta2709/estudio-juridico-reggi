@@ -13,6 +13,11 @@ footer {
 .footer-navbar {
     @include flex (row, space-around, center);
     flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+        @include flex (column, space-around, flex-start);
+
+    }
 }
 
 .footer-contacto,
