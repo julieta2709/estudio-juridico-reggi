@@ -1,15 +1,28 @@
 .infoutil-container {
-    @include flex (column, center, flex-start);
-    flex-wrap: wrap;
+    @include flex (row, center, center);
     margin-top: 10px;
-    gap: 2rem;
+    margin-right: 10px;
+    gap: $spacing_small;
 
     .infoutil-img {
-        width: 35%;
+        width: 80%;
+        float: right;
     }
 
-    & h4, .infoutil-link {
+    .infoutil-link{
+        font-weight: bold;
+        background-color: $color_principal;
+        padding: 0.6rem;
+        border-radius: 4rem;
+    }
+
+    & h4 {
         font-weight: bold;
     }
 
+}
+.card-subtitle{
+    font-style: italic;
+    color: $color_principal;
+    margin: 5px 0 5px 0;
 }
