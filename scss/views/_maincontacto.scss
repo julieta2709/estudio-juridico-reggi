@@ -1,46 +1,63 @@
-.contenido-container {
-    @include flex (row, center, center);
-}
+.contacto-container {
+    @include flex (row, center, flex-start);
+    margin-top: 10px;
+    gap: $spacing_small;
 
-form {
-    margin: 10px;
-    width: 50%;
-
-    .form-container {
-        padding: $spacing_xsmall;
-
-        .form-label {
-            font-size: $text_medium;
-            font-weight: bold;
-        }
-
-        textarea.form-control {
-            height: 100px;
-        }
-
-    }
-
-    .form-button {
-        text-align: right;
-
-    }
-
-    .bg-secondary {
+    h4 {
+        text-align: center;
         color: white;
-        margin: 5px;
-        width: 30%;
-        padding: 0.5rem;
-    }
-}
+        font-weight: bold;
+        font-size: $text_xlarge;
+        padding:0.5rem;
+        background-color: $color_principal;
+        margin-left: 10px;
+        margin-right: 10px;
 
-.contenido-texto {
-    @include flex (row, space-evenly, normal); 
-    
-    .contenido-img {
-        width: 40%;
     }
 
-    & iframe{
+    form {
         width: 50%;
+
+        .form-container {
+            padding: $spacing_xsmall;
+
+            .form-label {
+                font-size: $text_medium;
+                font-weight: bold;
+            }
+
+            textarea.form-control {
+                height: 100px;
+            }
+
+        }
+
+        .form-button {
+            text-align: right;
+
+        }
+
+        .bg-secondary {
+            color: white;
+            margin: 5px;
+            width: 30%;
+            padding: 0.5rem;
+        }
+    }
+
+    .contacto-texto {
+        @include flex (column, space-evenly, normal);
+
+                .contacto-mapa {
+            @include flex (row, space-evenly, normal);
+        }
+
+        .contacto-img {
+            width: 40%;
+        }
+
+        & iframe {
+            width: 50%;
+        }
     }
 }
