@@ -68,7 +68,7 @@ header {
   header .header_logo_link {
     width: 30%; }
   header .header_logo_img {
-    width: 80%;
+    width: 100%;
     padding: 1rem; }
   header .header_parrafo {
     display: flex;
@@ -86,7 +86,8 @@ header {
   margin-bottom: 5px; }
 
 .navbar-expand-lg .navbar-collapse {
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin-top: 10px; }
 
 .nav.nav-pills {
   gap: 1rem; }

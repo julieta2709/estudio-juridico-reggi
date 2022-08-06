@@ -13,7 +13,7 @@ header {
     }
 
     .header_logo_img {
-        width: 80%;
+        width: 100%;
         padding: $spacing_xsmall;
     }
 
@@ -39,6 +39,7 @@ header {
 
 .navbar-expand-lg .navbar-collapse {
     justify-content: space-around;
+    margin-top: 10px;
 }
 
 .nav.nav-pills {
