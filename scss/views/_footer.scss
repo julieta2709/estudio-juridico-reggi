@@ -6,13 +6,20 @@ footer {
 }
 
 .footer-container {
-    @include flex (row, space-around, flex-start);
+    @include flex (column, space-around, center);
     flex-wrap: wrap;
+    margin: 16px;
+
+    @media screen and (min-width: 768px) {
+        @include flex (row, space-around, flex-start);
+
+    }
 }
 
 .footer-navbar {
-    @include flex (row, space-around, center);
+    @include flex (row, space-evenly, center);
     flex-wrap: wrap;
+    margin: 20px;
 
     @media screen and (min-width: 768px) {
         @include flex (column, space-around, flex-start);

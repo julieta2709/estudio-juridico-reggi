@@ -26,6 +26,7 @@ header {
             color: $text_color;
             font-weight: bold;
         }
+
     }
 
 
@@ -50,6 +51,7 @@ header {
     border-radius: 4px;
     border: solid 1px $color_principal;
     background-color: $color_principal;
+    margin-left: 30px;
 }
 
 .navbar-toggler {
@@ -59,7 +61,7 @@ header {
     &-icon {
         background-image: none;
         margin-top: 5px;
-
+        
         &::before {
             font-family: FontAwesome;
             content: "\f0c9";

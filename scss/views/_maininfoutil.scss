@@ -9,11 +9,17 @@
         float: right;
     }
 
-    .infoutil-link{
+    .infoutil-link {
         font-weight: bold;
         background-color: $color_principal;
         padding: 0.6rem;
         border-radius: 4rem;
+
+        @media screen and (max-width:432px) {
+            i {
+                display: none;
+            }
+        }
     }
 
     & h4 {
@@ -21,7 +27,8 @@
     }
 
 }
-.card-subtitle{
+
+.card-subtitle {
     font-style: italic;
     color: $color_principal;
     margin: 5px 0 5px 0;

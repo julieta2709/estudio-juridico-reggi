@@ -1,5 +1,5 @@
 .contacto-container {
-    @include flex (column, center, flex-start);
+    @include flex (column, center, center);
     margin-top: 10px;
     gap: $spacing_small;
 
@@ -53,6 +53,9 @@
 
         .contacto-img {
             width: 40%;
+            @media screen and (max-width: $desktop) {
+                display: none;
+            }
         }
 
         & iframe {
@@ -60,7 +63,8 @@
         }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $desktop) {
         @include flex (row, center, flex-start);
+        margin: 20px;
     }
 }
