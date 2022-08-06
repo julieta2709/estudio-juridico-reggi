@@ -7,7 +7,6 @@
 /* Utilities */
 @import './Utilities/mixins';
 @import './Utilities/maps';
-@import './Utilities/mediasquery';
 
 /* Header */
 @import './views/header';
@@ -26,3 +25,6 @@
 
 /* Contenido Contacto */
 @import'./views/maincontacto';
+
+/* Medias Query */
+@import './Utilities/mediasquery';
