@@ -1,3 +1,7 @@
+.contenido-container {
+    @include flex (row, center, center);
+}
+
 form {
     margin: 10px;
     width: 50%;
@@ -16,16 +20,27 @@ form {
 
     }
 
+    .form-button {
+        text-align: right;
+
+    }
+
     .bg-secondary {
         color: white;
         margin: 5px;
-        justify-content: flex-end;
+        width: 30%;
+        padding: 0.5rem;
+    }
+}
+
+.contenido-texto {
+    @include flex (row, space-evenly, normal); 
+    
+    .contenido-img {
+        width: 40%;
     }
 
-
-
-
-
-
-
+    & iframe{
+        width: 50%;
+    }
 }
