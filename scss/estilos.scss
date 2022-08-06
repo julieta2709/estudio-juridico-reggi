@@ -4,9 +4,10 @@
 /* Normalizadores */
 @import './base/reset';
 
-/* Mixins */
+/* Utilities */
 @import './Utilities/mixins';
 @import './Utilities/maps';
+@import './Utilities/mediasquery';
 
 /* Header */
 @import './views/header';

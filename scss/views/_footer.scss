@@ -15,15 +15,6 @@ footer {
     flex-wrap: wrap;
 }
 
-
-@media (min-width: 768px) {
-    .footer-navbar {
-        @include flex (column, space-around, flex-start);
-    }
-}
-
-
-
 .footer-contacto,
 .footer-wsp {
     @include flex (column, space-around, center);
@@ -31,7 +22,7 @@ footer {
 
 }
 
-.list-group-item{
+.list-group-item {
     background-color: $color_principal;
     color: white;
 }

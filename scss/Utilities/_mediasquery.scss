@@ -1,0 +1,5 @@
+@media (min-width: 768px) {
+    .footer-navbar {
+        @include flex (column, space-around, flex-start);
+    }
+}
