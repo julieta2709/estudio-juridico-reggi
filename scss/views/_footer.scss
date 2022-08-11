@@ -10,7 +10,7 @@ footer {
     flex-wrap: wrap;
     margin: 16px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         @include flex (row, space-around, flex-start);
 
     }
