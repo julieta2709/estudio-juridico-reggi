@@ -27,38 +27,54 @@ header {
             font-weight: bold;
         }
 
+        &_h1 {
+            text-align: center;
+        }
+
     }
 
 
 }
 
-.menu {
+.navbar-expand-lg {
     background-color: $color_secondary;
     margin-bottom: 5px;
-}
-
-.navbar-expand-lg .navbar-collapse {
-    justify-content: space-around;
-    margin-top: 10px;
-    @media screen and (min-width: $tablet) {
-        display: flex;
-    }
-}
-
-.nav {
-    @include flex(column, space-around, stretch);
+    @include flex(column, space-around, flex-start);
     align-content: flex-start;
 
-    &-item {
-        border: white solid 1px;
-    }
+    .navbar-toggler {
+        display: flex;
+        align-items: center;
+        background-color: $color_principal;
+        margin-left: 16px;
 
-    @media screen and (min-width: $tablet) {
-        @include flex (row, space-around, center);
-        border: none;
-    }
+        .button_menu {
+            color: white;
+            font-size: $text_xsmall;
+            font-weight: bold;
+            margin: 0 5px 5px 0;
+        }
 
+        &-icon {
+            background-image: none;
+            margin-top: 5px;
+        }
+
+        &::before {
+            font-family: FontAwesome;
+            content: "\f0c9";
+            color: white;
+        }
+    }
 }
+
+.nav-pills {
+    justify-content: space-around;
+    margin: 10px 0 0 16px;
+    @include flex(column, space-around, stretch);
+    align-content: flex-start;
+}
+
 
 .nav-pills .nav-link.active,
 .nav-pills .nav-link,
@@ -68,34 +84,10 @@ header {
     @media screen and (min-width: $tablet) {
         border-radius: 4px;
         border: solid 1px $color_principal;
-        gap: 2rem;
+
     }
 }
 
-.navbar-toggler {
-    display: flex;
-    align-items: center;
-
-@media screen and (min-width: $tablet) {
-    display: none;
-    
-}
-    &-icon {
-        background-image: none;
-        margin-top: 5px;
-
-        &::before {
-            font-family: FontAwesome;
-            content: "\f0c9";
-            color: white;
-        }
-    }
-
-}
-
-.button_menu {
-    color: white;
-    font-size: $text_xsmall;
-    font-weight: bold;
-    margin: 0 5px 5px 0;
+.nav-item {
+    border: white solid 1px;
 }
