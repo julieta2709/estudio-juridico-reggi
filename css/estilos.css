@@ -74,54 +74,67 @@ header {
     header .header_parrafo_h1 {
       text-align: center; }
 
-.navbar-expand-lg {
+.header-navbar {
   background-color: #b2b2f8;
-  margin-bottom: 5px;
+  margin: 10px 0 10px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
   align-content: flex-start; }
-  .navbar-expand-lg .navbar-toggler {
+  .header-navbar .navbar-toggler {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     background-color: #4e4d4d;
-    margin-left: 16px; }
-    .navbar-expand-lg .navbar-toggler .button_menu {
+    margin: 5px 0 5px 16px;
+    width: 160px; }
+    .header-navbar .navbar-toggler .button_menu {
       color: white;
       font-size: 1.4 em;
       font-weight: bold;
       margin: 0 5px 5px 0; }
-    .navbar-expand-lg .navbar-toggler-icon {
+    .header-navbar .navbar-toggler-icon {
       background-image: none;
-      margin-top: 5px; }
-    .navbar-expand-lg .navbar-toggler::before {
+      margin-top: 5px;
+      width: 5%; }
+    .header-navbar .navbar-toggler::after {
       font-family: FontAwesome;
       content: "\f0c9";
       color: white; }
+  .header-navbar .nav-pills {
+    justify-content: space-around;
+    margin: 0 0 5px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: flex-start; }
+  .header-navbar .nav-pills .nav-link.active,
+  .header-navbar .nav-pills .nav-link,
+  .header-navbar .navbar-toggler {
+    background-color: #4e4d4d;
+    width: 160px;
+    border-radius: 4px;
+    gap: 1rem; }
 
-.nav-pills {
-  justify-content: space-around;
-  margin: 10px 0 0 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: stretch;
-  align-content: flex-start; }
-
-.nav-pills .nav-link.active,
-.nav-pills .nav-link,
-.navbar-toggler {
-  background-color: #4e4d4d; }
-  @media screen and (min-width: 768px) {
-    .nav-pills .nav-link.active,
-    .nav-pills .nav-link,
-    .navbar-toggler {
-      border-radius: 4px;
-      border: solid 1px #4e4d4d; } }
-
-.nav-item {
-  border: white solid 1px; }
+@media screen and (min-width: 768px) {
+  .header-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: none;
+    align-items: none; }
+    .header-navbar .nav-pills {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 10px; }
+    .header-navbar .nav-pills .nav-link.active,
+    .header-navbar .nav-pills .nav-link,
+    .header-navbar .navbar-toggler {
+      text-align: center; } }
 
 /* Footer */
 footer {
