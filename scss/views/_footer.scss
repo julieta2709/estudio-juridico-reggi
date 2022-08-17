@@ -27,7 +27,15 @@ footer {
     }
 }
 
-.footer-contacto,
+.footer-contacto {
+    @include flex (column, space-around, center);
+    margin-top: 20px;
+
+    @media screen and (max-width:$tablet) {
+        display: none;
+    }
+}
+
 .footer-wsp {
     @include flex (column, space-around, center);
     margin-top: 20px;
