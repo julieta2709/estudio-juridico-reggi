@@ -142,7 +142,7 @@ footer {
 
 .footer-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
@@ -307,7 +307,13 @@ footer {
     margin-left: 10px;
     margin-right: 10px; }
   .contacto-container form {
-    width: 50%; }
+    width: 80%; }
+    @media screen and (min-width: 768px) {
+      .contacto-container form {
+        width: 50%; } }
+    .contacto-container form h6 {
+      font-weight: bold;
+      padding-left: 1rem; }
     .contacto-container form .form-container {
       padding: 1rem; }
       .contacto-container form .form-container .form-label {
@@ -315,6 +321,11 @@ footer {
         font-weight: bold; }
       .contacto-container form .form-container textarea.form-control {
         height: 100px; }
+    .contacto-container form .formcheck-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center; }
     .contacto-container form .form-button {
       text-align: right; }
     .contacto-container form .bg-secondary {

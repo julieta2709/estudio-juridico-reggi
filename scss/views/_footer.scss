@@ -6,7 +6,7 @@ footer {
 }
 
 .footer-container {
-    @include flex (column, space-around, center);
+    @include flex (column-reverse, space-around, center);
     flex-wrap: wrap;
     margin: 16px;
 

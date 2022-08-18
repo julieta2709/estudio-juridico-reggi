@@ -15,7 +15,15 @@
     }
 
     form {
-        width: 50%;
+        width: 80%;
+        @media screen and (min-width: $tablet) {
+            width: 50%;
+        }
+
+        h6 {
+            font-weight: bold;
+            padding-left: $spacing_xsmall;
+        }
 
         .form-container {
             padding: $spacing_xsmall;
@@ -29,6 +37,10 @@
                 height: 100px;
             }
 
+        }
+
+        .formcheck-container {
+            @include flex (row, space-evenly, center)
         }
 
         .form-button {
@@ -53,6 +65,7 @@
 
         .contacto-img {
             width: 40%;
+
             @media screen and (max-width: $desktop) {
                 display: none;
             }
