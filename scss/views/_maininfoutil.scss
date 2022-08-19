@@ -1,5 +1,5 @@
 .infoutil-container {
-    @include flex (row, center, center);
+    @include flex (column, center, center);
     margin-top: 10px;
     margin-right: 10px;
     gap: $spacing_small;
@@ -15,7 +15,7 @@
         padding: 0.6rem;
         border-radius: 4rem;
 
-        @media screen and (max-width:432px) {
+        @media screen and (max-width:$celular) {
             i {
                 display: none;
             }

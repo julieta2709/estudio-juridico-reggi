@@ -264,7 +264,7 @@ footer {
 /* Contenido Información útil */
 .infoutil-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
@@ -278,7 +278,7 @@ footer {
     background-color: #4e4d4d;
     padding: 0.6rem;
     border-radius: 4rem; }
-    @media screen and (max-width: 432px) {
+    @media screen and (max-width: 576px) {
       .infoutil-container .infoutil-link i {
         display: none; } }
   .infoutil-container h4 {
@@ -307,6 +307,8 @@ footer {
     margin-left: 10px;
     margin-right: 10px; }
   .contacto-container form {
+    border: solid white 2px;
+    background-color: rgba(128, 128, 128, 0.519);
     width: 80%; }
     @media screen and (min-width: 768px) {
       .contacto-container form {
