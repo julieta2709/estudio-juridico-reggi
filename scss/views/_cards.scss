@@ -1,8 +1,6 @@
 .card-container {
-    @include flex (row, space-around, none);
+    @include flex (row, space-evenly, stretch);
     flex-wrap: wrap;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .card {
@@ -14,17 +12,20 @@
     }
 
     &-body {
-        @include flex (column, flex-start, center);
+        @include flex (column, space-between, center);
     }
-    & .text-muted{
+
+    .text-muted {
         font-style: italic;
+        font-weight: bold;
+        text-align: center;
     }
 }
 
 .btn {
-    border-radius: 10px;
+    border-radius: 4rem;
     border: 2px solid $color_principal;
-    padding: 1rem;
+    padding: $spacing_xxsmall;
 }
 
 .bg-pension,

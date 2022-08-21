@@ -9,28 +9,31 @@ header {
     }
 
     .header_logo_link {
-        width: 30%;
+        width: 80%;
+
+        @media screen and (min-width: $tablet) {
+            width: 25%;
+
+        }
     }
 
     .header_logo_img {
         width: 100%;
         padding: $spacing_xsmall;
+
     }
 
     .header_parrafo {
         @include flex (column, flex-start, center);
+        margin-top: 20px;
 
         &_h1,
         h2,
         h3 {
             color: $text_color;
             font-weight: bold;
-        }
-
-        &_h1 {
             text-align: center;
         }
-
     }
 
 
@@ -93,10 +96,11 @@ header {
         }
     }
 
-    .header-navbar .nav-pills{
+    .header-navbar .nav-pills {
         @include flex (column, space-around, flex-start);
         gap: 0;
     }
+
     .nav-pills .nav-link.active,
     .nav-pills .nav-link {
         width: 160px;

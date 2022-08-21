@@ -1,12 +1,27 @@
 .infoutil-container {
     @include flex (column, center, center);
-    margin-top: 10px;
-    margin-right: 10px;
-    gap: $spacing_small;
+    
+    @media screen and (min-width: $tablet) {
+        @include flex (row, space-evenly, stretch);
+        flex-wrap: wrap;
+        margin: 10px 10px 0 16px;
+        gap: $spacing_xsmall;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 100px;
+        margin-right: 100px;
+        gap: 0;
+                
+    }
 
     .infoutil-img {
-        width: 80%;
-        float: right;
+        width: 50%;
+        align-content: center;
+    }
+
+    .logo-anses {
+        text-align: center;
     }
 
     .infoutil-link {
@@ -21,11 +36,6 @@
             }
         }
     }
-
-    & h4 {
-        font-weight: bold;
-    }
-
 }
 
 .card-subtitle {

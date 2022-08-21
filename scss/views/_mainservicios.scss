@@ -1,0 +1,14 @@
+.servicios-container {
+    @include flex (column, center, center);
+
+    @media screen and (min-width: $tablet) {
+        @include flex (row, space-evenly, stretch);
+        flex-wrap:wrap;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 90px;
+        margin-right: 90px;
+        
+    }
+}

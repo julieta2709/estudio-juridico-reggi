@@ -1,25 +1,38 @@
 .contacto-container {
     @include flex (column, center, center);
     margin-top: 10px;
-    gap: $spacing_small;
+    gap: $spacing_xsmall;
+
+    .contacto-form {
+        @include flex (column, center, center)
+    }
 
     h4 {
         text-align: center;
         color: white;
         font-weight: bold;
-        font-size: $text_xlarge;
         padding: 0.5rem;
         background-color: $color_principal;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin: 10px 10px 0 10px;
+        width: 300px;
+
+        @media screen and (min-width:$tablet) {
+            width: 400px
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: 450px;
+        }
     }
 
     form {
         border: solid white 2px;
         background-color: rgba(128, 128, 128, 0.519);
-        width: 80%;
+        width: 90%;
+        margin: 16px;
+
         @media screen and (min-width: $tablet) {
-            width: 50%;
+            margin-top: 10px;
         }
 
         h6 {
@@ -50,7 +63,7 @@
 
         }
 
-        .bg-secondary {
+        .bg-principal {
             color: white;
             margin: 5px;
             width: 30%;
@@ -62,24 +75,71 @@
         @include flex (column, space-evenly, normal);
 
         .contacto-mapa {
-            @include flex (row, space-evenly, normal);
-        }
+            @include flex (column, space-evenly, center);
+            margin-top: 10px;
 
-        .contacto-img {
-            width: 40%;
+            @media screen and (min-width: $desktop) {
+                margin: 0;
 
-            @media screen and (max-width: $desktop) {
-                display: none;
+            }
+
+            iframe {
+                width: 90%;
+                margin-top: 10px;
             }
         }
 
-        & iframe {
-            width: 50%;
+        .contacto-horario {
+            @include flex (column, center, center);
+
+            .horario,
+            .telefono,
+            .celular,
+            .mail {
+                background-color: white;
+                font-weight: bold;
+                width: 90%;
+                text-align: center;
+                padding: 0.5rem;
+            }
+
+            .horario,
+            .telefono,
+            .mail {
+                margin-top: 10px;
+            }
+            .telefono{
+                margin-bottom: 0;
+            }
+
+            .horario::before {
+                content: "\f017";
+            }
+
+            .telefono::before {
+                content: "\f095";
+            }
+
+            .celular::before {
+                content: "\f3cd";
+            }
+
+            .mail::before {
+                content: "\f1fa";
+            }
+
+            .horario::before,
+            .telefono::before,
+            .celular::before,
+            .mail::before {
+                font-family: FontAwesome;
+                margin-right: 5px;
+            }
         }
     }
 
     @media screen and (min-width: $desktop) {
-        @include flex (row, center, flex-start);
+        @include flex (row, space-evenly, flex-start);
         margin: 20px;
     }
 }
