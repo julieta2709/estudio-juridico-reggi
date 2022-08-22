@@ -1,8 +1,5 @@
-$colors: (
-    jubilacion: $jubilacion,
-    pension: $pension,
-    principal:$color_principal,
-); 
+$colors: (principal:$color_principal,
+);
 
 @each $name,
 $value in $colors {

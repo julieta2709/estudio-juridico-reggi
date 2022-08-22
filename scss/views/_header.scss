@@ -25,7 +25,8 @@ header {
 
     .header_parrafo {
         @include flex (column, flex-start, center);
-        margin-top: 20px;
+        margin-top: 16px;
+        margin-right: 8px;
 
         &_h1,
         h2,
@@ -33,6 +34,11 @@ header {
             color: $text_color;
             font-weight: bold;
             text-align: center;
+        }
+        @media screen and (max-width: $tablet) {
+            .header_parrafo_h1{
+            display: none;
+            }
         }
     }
 

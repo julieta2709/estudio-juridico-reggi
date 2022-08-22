@@ -7,6 +7,7 @@
 /* Utilities */
 @import './Utilities/mixins';
 @import './Utilities/maps';
+@import './Utilities/cards';
 
 /* Header */
 @import './views/header';
@@ -15,10 +16,7 @@
 @import './views/footer';
 
 /* Contenido index */
-@import './views/cards';
-
-/* Contenido Sobrenosotros */
-@import './views/carousel';
+@import './views/mainindex';
 
 /* Contenido Información útil */
 @import './views/maininfoutil';
@@ -28,4 +26,7 @@
 
 /* Contenido Servicios */
 @import './views/mainservicios';
+
+/* Contenido Sobre nosotros */
+@import './views/mainsobrenosotros'
 
