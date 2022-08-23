@@ -58,16 +58,10 @@ a {
     font-weight: bold;
     text-align: center; }
 
-.btn, .bg-pension,
-.bg-jubilacion, .bg-secondary {
+.btn, .bg-secondary, .bg-principal {
   border-radius: 4rem;
   border: 2px solid #4e4d4d;
   padding: 8px; }
-
-.bg-pension,
-.bg-jubilacion {
-  font-weight: bold;
-  justify-items: center; }
 
 /* Header */
 header {
@@ -435,9 +429,43 @@ footer {
       margin-right: 90px; } }
 
 /* Contenido Sobre nosotros */
-.card-sobrenos {
+.sobrenos-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%; }
+  margin: 16px; }
+  @media screen and (min-width: 768px) {
+    .sobrenos-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      flex-wrap: wrap; } }
+  @media screen and (min-width: 1024px) {
+    .sobrenos-container .card-container .card {
+      height: 390px; } }
+  .sobrenos-container .card-sobrenos .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; }
+    @media screen and (min-width: 768px) {
+      .sobrenos-container .card-sobrenos .card {
+        height: 340px;
+        width: 22rem;
+        align-items: flex-start; } }
+    @media screen and (min-width: 1024px) {
+      .sobrenos-container .card-sobrenos .card {
+        height: 390px; } }
+
+.estudio-img {
+  width: 50%;
+  height: 100%;
+  border-radius: 0.25rem;
+  border: solid black 1px; }
+
+.card-sobrenos .card-body {
+  padding-left: 8px;
+  padding-top: 0;
+  padding-bottom: 0; }

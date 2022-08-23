@@ -28,10 +28,3 @@
     padding: $spacing_xxsmall;
 }
 
-.bg-pension,
-.bg-jubilacion {
-    @extend .btn;
-    font-weight: bold;
-    justify-items: center;
-
-}

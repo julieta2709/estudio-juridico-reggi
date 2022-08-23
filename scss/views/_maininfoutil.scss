@@ -43,3 +43,6 @@
     color: $color_principal;
     margin: 5px 0 5px 0;
 }
+.bg-principal{
+    @extend .btn;
+}

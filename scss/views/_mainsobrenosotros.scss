@@ -1,4 +1,44 @@
-.card-sobrenos{
-    @include flex (row, center, center);
-    width: 80%;
+.sobrenos-container {
+    @include flex (column, center, center);
+    margin: 16px;
+
+    @media screen and (min-width:$tablet) {
+        @include flex (row, space-evenly, flex-start);
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: $desktop) {
+        .card-container .card {
+            height: 390px;
+        }
+
+    }
+
+    .card-sobrenos .card {
+        @include flex (row, flex-start, center);
+
+        @media screen and (min-width:$tablet) {
+            height: 340px;
+            width: 22rem;
+            align-items: flex-start;
+        }
+
+        @media screen and (min-width: $desktop) {
+            height: 390px;
+        }
+
+    }
+}
+
+.estudio-img {
+    width: 50%;
+    height: 100%;
+    border-radius: 0.25rem;
+    border: solid black 1px;
+}
+
+.card-sobrenos .card-body {
+    padding-left: $spacing_xxsmall;
+    padding-top: 0;
+    padding-bottom: 0;
 }
