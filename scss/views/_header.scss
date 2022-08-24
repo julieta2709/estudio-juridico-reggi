@@ -35,9 +35,10 @@ header {
             font-weight: bold;
             text-align: center;
         }
+
         @media screen and (max-width: $tablet) {
-            .header_parrafo_h1{
-            display: none;
+            .header_parrafo_h1 {
+                display: none;
             }
         }
     }
