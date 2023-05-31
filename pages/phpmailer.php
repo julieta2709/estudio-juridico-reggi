@@ -24,7 +24,7 @@ if( empty(trim($apellido)) ) $apellido = '';
 $body = <<<HTML
     <h4>Contacto desde la web</h4>
     <p>De: $nombre $apellido / $email / $telefono</p>
-    <p>Datos: $sexo / $hijos / $aportes</p>
+    <p>Datos: sexo: $sexo / cantidad de hijos: $hijos /aportes desp de 2008 $aportes</p>
     <h5>Mensaje</h5>
     $mensaje
 HTML;
