@@ -1,9 +1,4 @@
-Proyecto: es una página para un estudio jurídico previsional.
-
-El sitio cuenta con 5 páginas: Index, Servicios, Sobre Nosotros, Información útil y Contacto. Todas tienen diseño responsive para 3 medidas: mobile, tablet y desktop. También están linkeadas entre sí. 
-
-La página cuenta con el vínculo para acceder al contacto de whatsapp. 
-
-Se trabajan elementos de boostrap: cards, carousel, menú hamburguesa, a los que se les da estilo con scss. También cuenta con un formulario de contacto.
-
-Librerías: Se utilizan elementos de fontawesome para los íconos y componentes de boostrap. 
+Este proyecto se trata de una página web para un estudio jurídico previsional. 
+Cuenta con cinco páginas, incluyendo Index, Servicios, Sobre Nosotros, Información Útil y Contacto, todas diseñadas con una interfaz responsive para tres medidas: mobile, tablet y desktop. Las páginas están interconectadas para facilitar la navegación del usuario. Además, la página cuenta con un enlace directo para contactar a través de WhatsApp y un formulario de contacto para mayor comodidad. Este formulario tiene la funcionalidad de enviar la información recopilada por correo electrónico, esto se logra utilizando PHP Mailer.
+Se utilizan elementos de Bootstrap, como cards, carousel y menú hamburguesa, a los que se les da estilo con SCSS. También se incluyen componentes de Fontawesome para los íconos.
+Además de las funcionalidades mencionadas, también se tuvo en cuenta la optimización para motores de búsqueda (SEO). Se incorporaron las etiquetas necesarias para que la página aparezca en los resultados de búsqueda de Google y Bing.
